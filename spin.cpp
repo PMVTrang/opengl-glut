@@ -10,6 +10,8 @@ static int WIN_SIZE = 500;
 int xo, yo;
 int magic = 10;
 
+bool isDragging;
+
 
 void init(void){
 	xo = 250;
@@ -31,8 +33,7 @@ void drawTriangle() {
 
 /*
 * x, y : mouse's current position
-* 10 - arbitrary number lmao bias 
-* because triangle's size is small
+
 */
 bool checkInsideTriangle (int x, int y) {
 	if (xo - magic <= x && x <= xo + magic 
@@ -55,7 +56,6 @@ void display() {
 	
 	glutSwapBuffers();
 }
-
 void spinDisplay(void) {
 	spin = spin + 2.0;
 	if (spin > 360.0)
@@ -77,9 +77,13 @@ void reshape(int w, int h) {
 * x, y - mouse position from top-left corner
 */
 void mouse(int button, int state, int x, int y) {
+	isDragging = false;
 	switch (button) {
 		case GLUT_LEFT_BUTTON:
 			if (state == GLUT_DOWN) {
+				if (checkInsideTriangle(x, y)) {
+					isDragging = true;
+				}
 				glutIdleFunc(spinDisplay);
 			}
 			break;
@@ -126,7 +130,10 @@ void translate(int x, int y) {
 
 void mouseDrag (int x, int y) {
 	std::cout<< "drag x = " << x << " y = " << y << std::endl;  
-	translate(x, y);
+	if (isDragging) {
+		translate(x, y);
+	}
+	
 }
 
 
@@ -137,10 +144,12 @@ void mouseDrag (int x, int y) {
 	glutInitWindowPosition(200, 100);
 	glutCreateWindow(argv[0]);
 	init();
+	
 	glutDisplayFunc(display); 
 	glutReshapeFunc(reshape); 
 	glutMouseFunc(mouse);
 	glutMotionFunc(mouseDrag);
 	glutMainLoop();
- return 0;
+	
+ 	return 0;
 }
