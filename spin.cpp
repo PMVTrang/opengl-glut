@@ -82,7 +82,7 @@ void spinDisplay() {  // update spin value
 	spin = spin + 2.0;
 	if (spin > 360.0)
 	spin = spin - 360.0;
-	Sleep(1);
+	//Sleep(1);
 	glutPostRedisplay();  // call display after update spin value
 }
 
@@ -138,7 +138,6 @@ void keyboard(unsigned char key, int x, int y) {
 				glutIdleFunc(NULL);
 				spinning = false;
 			}
-			changeColor();
 			break;
 		default:
 			break;
