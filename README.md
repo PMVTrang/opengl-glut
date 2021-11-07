@@ -1,4 +1,7 @@
 # opengl-glut
+## Boilerplate
+Super super simple and minimal.<br>
+
 ## Lab01 - flag
 Draw Vietnam national flag. ez game man.
 ## Lab02 - spin
