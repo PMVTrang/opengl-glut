@@ -10,9 +10,9 @@ These steps will install the free compiler Dev c++ and the free graphics library
 <br>
 Dưới đây là các bước để cài đặt IDE DevC cùng với thư viện đồ họa OpenGL trên Window 64bits.
 
-Link download Dev c++: http://www.mediafire.com/download/jvca73gqgg0l783/Setup_DEVC+++5.4.1.rar
-
-Link download glutming: http://chortle.ccsu.edu/Bloodshed/glutming.zip
+Link download Dev c++: http://www.mediafire.com/download/jvca73gqgg0l783/Setup_DEVC+++5.4.1.rar <br>
+Link download glutming: http://chortle.ccsu.edu/Bloodshed/glutming.zip<br>
+Or just download the uploaded .rar files.
 
 ## Install DevC
 Use the exact version in the link above to avoid any troublesome problem because i just follow the tutorial i dont know anything huihuihui.<br>
