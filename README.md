@@ -18,11 +18,11 @@ Draw one of the [rose curves](https://en.wikipedia.org/wiki/Rose_(mathematics)).
 Haven't update to use keyboard to control number of interations yet.
 
 ## Lab04 - dinosaur
-Draw a dinosaur by reading edges' coordinates from .bat file.
+Draw a dinosaur by reading vertices' coordinates from .bat file.
 Then draw another dinosaur, half the size, face-to-face with the previous one.
 
 ## Lab05 - moving stickman
-Draw a stickman, reading fixed coordinate edges from array. Stickman auto moves back and forth with arms and legs swinging.
+Draw a stickman, reading fixed coordinate vertices from array. Stickman auto moves back and forth with arms and legs swinging.
 
 Haven't update to use keyboard to control stickman movement yet.
 
@@ -30,3 +30,6 @@ I hate stickman.
 
 ## Lab06 - tweening
 Draw auto-created intermediate frames when changing between two given shapes, smoothing down the animation.
+
+## Lab07.1 - texChecker
+Draw two black and white checkerboards with perspective using texture created by code
