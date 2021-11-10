@@ -17,7 +17,10 @@ Draw a stickman, reading fixed coordinate vertices from array. Stickman auto mov
 Haven't update to use keyboard to control stickman movement yet. I hate stickman.
 ## Lab06 - tweening
 Draw auto-created intermediate frames when changing between two given shapes, smoothing down the animation.
-## Lab07.1 - texChecker
+## Lab07.1-1 - texChecker
 Draw two black and white checkerboards with perspective using texture created by code.
-## Lab07.2 - texReplace
+## Lab07.1-2 - texReplace
 Same as texChecker, but insert a smaller red-black checkboard on the old one when press s, remove it when press r.
+## Lab07.2-1 - texImage
+Create texture from a bmp image and a checkboard texture like above. <br>
+Interations: Press Space, change between 2 textures. Press left, right -> rotate
